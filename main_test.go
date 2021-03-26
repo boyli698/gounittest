@@ -39,3 +39,22 @@ func TestPrint02(t *testing.T) {
 		})
 	}
 }
+
+func TestPrint03(t *testing.T) {
+	type args struct {
+		str string
+	}
+	tests := []struct {
+		name string
+		args args
+	}{
+		// TODO: Add test cases.
+		{"case1", args{"str1"}},
+		{"case2", args{""}},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			Print03(tt.args.str)
+		})
+	}
+}
